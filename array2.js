@@ -1,7 +1,8 @@
 
 const myArray = [7, 10, "Clentan", 13, 89, true, 45, false, "Jerry", "Vukona", "Reabetswe", 600];
 
-//1a
+//1a Using a for loop and a variable, return all values that are numbers.
+function ReturnAllValuesThatAreNumber(myArray){
 let numbers = [];
 for (let i = 0; i < myArray.length; i++) {
   if (typeof myArray[i] === "number") {
@@ -9,8 +10,10 @@ for (let i = 0; i < myArray.length; i++) {
   }
 }
 console.log("Numbers:", numbers); 
+}
 
-//1b
+//1b 
+function ReturnAllValuesThatAreStrings(myArray){
 let strings = [];
 let j = 0;
 while (j < myArray.length) {
@@ -20,7 +23,9 @@ while (j < myArray.length) {
   j++;
 }
 console.log("Strings:", strings);
+}
 
+function ReturnSumOfaAllValues(myArray){
 let sum = 0;
 let k = 0;
 do {
@@ -30,8 +35,9 @@ do {
   k++;
 } while (k < myArray.length);
 console.log("Sum:", sum);
+}
 
-
+function greeting(myArray){
 let greeting = "Hello, ";
 for (let i = 0; i < strings.length; i++) {
   greeting += strings[i];
@@ -43,7 +49,7 @@ for (let i = 0; i < strings.length; i++) {
 }
 greeting += ".";
 console.log("Greeting:", greeting);
-
+}
 
 const newArray = myArray.filter((item) => typeof item !== "string");
 console.log("Array without strings:", newArray);
